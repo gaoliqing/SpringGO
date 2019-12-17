@@ -1,0 +1,17 @@
+server:
+  port: 6021
+spring:
+  application:
+    name: order
+feign:
+  hystrix:
+    enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6001/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

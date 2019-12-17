@@ -1,0 +1,19 @@
+server:
+  port: 6000
+spring:
+  application:
+    name: turbine
+turbine:
+  aggregator:
+    cluster-config: default
+  app-config: ORDER
+  cluster-name-expression: "'default'"
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6001/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
