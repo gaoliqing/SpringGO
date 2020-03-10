@@ -1,8 +1,8 @@
 package xyz.gaoliqing.order.feign;
 
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import xyz.gaoliqing.order.fallback.ProductionFallbackFactory;
 
 /**
@@ -11,10 +11,9 @@ import xyz.gaoliqing.order.fallback.ProductionFallbackFactory;
  * @description
  */
 @FeignClient(value = "PRODUCTION", fallbackFactory = ProductionFallbackFactory.class)
-@Component
 public interface ProductionFeignInterface {
 
-    @GetMapping("/production-detail")
-    String getProductionInfo();
+    @GetMapping(path = "/production_id/{name}")
+    String getProductionInfo(@PathVariable("name") String name);
 
 }
