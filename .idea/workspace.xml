@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b2e3aeb9-4598-4b5d-ad43-f05bc0997c1f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1083698605">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="37" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.101" value="1" />
+          <entry key="project.open.time.106" value="1" />
+          <entry key="project.open.time.108" value="1" />
+          <entry key="project.open.time.109" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.110" value="1" />
+          <entry key="project.open.time.111" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.120" value="1" />
+          <entry key="project.open.time.125" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.132" value="1" />
+          <entry key="project.open.time.135" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.145" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.150" value="1" />
+          <entry key="project.open.time.172" value="1" />
+          <entry key="project.open.time.187" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.201" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.65" value="1" />
+          <entry key="project.open.time.69" value="1" />
+          <entry key="project.open.time.76" value="2" />
+          <entry key="project.open.time.85" value="1" />
+          <entry key="project.open.time.88" value="1" />
+          <entry key="project.open.time.89" value="2" />
+          <entry key="project.open.time.90" value="3" />
+          <entry key="project.open.time.94" value="3" />
+          <entry key="project.open.time.97" value="1" />
+          <entry key="project.open.time.99" value="1" />
+          <entry key="project.opened" value="40" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="17" />
+          <entry key="conf" value="4" />
+          <entry key="factories" value="3" />
+          <entry key="html" value="1" />
+          <entry key="iml" value="3" />
+          <entry key="java" value="239" />
+          <entry key="pom" value="8" />
+          <entry key="properties" value="1" />
+          <entry key="xml" value="63" />
+          <entry key="yml" value="97" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="17" />
+          <entry key="HTML" value="1" />
+          <entry key="IDEA_MODULE" value="3" />
+          <entry key="JAVA" value="239" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Properties" value="1" />
+          <entry key="XML" value="71" />
+          <entry key="YAML" value="97" />
+          <entry key="spring.factories" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="conf" value="33" />
+          <entry key="dummy" value="17" />
+          <entry key="html" value="65" />
+          <entry key="java" value="6616" />
+          <entry key="json" value="2" />
+          <entry key="txt" value="3" />
+          <entry key="xml" value="400" />
+          <entry key="yml" value="1046" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="65" />
+          <entry key="JAVA" value="6614" />
+          <entry key="JSON" value="2" />
+          <entry key="PLAIN_TEXT" value="53" />
+          <entry key="RegExp" value="2" />
+          <entry key="SQL" value="1" />
+          <entry key="XML" value="399" />
+          <entry key="YAML" value="1046" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/turbine/src/main/java/xyz/gaoliqing/turbine/TurbineApplication.java" />
+        <option value="$PROJECT_DIR$/production/src/main/java/xyz/gaoliqing/production/pojo/Order.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/xyz/gaoliqing/order/pojo/Order.java" />
+        <option value="$PROJECT_DIR$/order/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/turbine/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/user/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/production/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/order/src/main/resources/file.conf" />
+        <option value="$PROJECT_DIR$/order/src/main/java/xyz/gaoliqing/order/feign/ProductionFeignInterface.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/xyz/gaoliqing/order/OrderApplication.java" />
+        <option value="$PROJECT_DIR$/order/pom.xml" />
+        <option value="$PROJECT_DIR$/order/src/main/java/xyz/gaoliqing/order/controller/OrderManagermentController.java" />
+        <option value="$PROJECT_DIR$/order/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/config-server/src/test/java/xyz/gaoliqing/configserver/UserApplicationTests.java" />
+        <option value="$PROJECT_DIR$/turbine/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/turbine/pom.xml" />
+        <option value="$PROJECT_DIR$/user/src/test/java/xyz/gaoliqing/user/UserApplicationTests.java" />
+        <option value="$PROJECT_DIR$/user/pom.xml" />
+        <option value="$PROJECT_DIR$/user/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/stores/src/test/java/xyz/gaoliqing/stores/StoresApplicationTests.java" />
+        <option value="$PROJECT_DIR$/stores/src/main/resources/mapper/Mapper.xml" />
+        <option value="$PROJECT_DIR$/stores/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/config-server/src/test/java/xyz/gaoliqing/configserver/ConfigServerApplicationTests.java" />
+        <option value="$PROJECT_DIR$/stores/src/main/java/xyz/gaoliqing/stores/config/PrimaryDBConfig.java" />
+        <option value="$PROJECT_DIR$/stores/src/main/java/xyz/gaoliqing/stores/config/SecondaryDBConfig.java" />
+        <option value="$PROJECT_DIR$/stores/pom.xml" />
+        <option value="$PROJECT_DIR$/production/src/main/java/xyz/gaoliqing/production/utils/CustomExceptionType.java" />
+        <option value="$PROJECT_DIR$/production/src/main/java/xyz/gaoliqing/production/service/ProductionInfoService.java" />
+        <option value="$PROJECT_DIR$/production/src/main/java/xyz/gaoliqing/production/utils/AjaxResponse.java" />
+        <option value="$PROJECT_DIR$/production/src/main/java/xyz/gaoliqing/production/pojo/Capsule.java" />
+        <option value="$PROJECT_DIR$/stores/src/main/java/xyz/gaoliqing/stores/pojo/Capsule.java" />
+        <option value="$PROJECT_DIR$/stores/src/main/java/xyz/gaoliqing/stores/mapper/StoreMapper.java" />
+        <option value="$PROJECT_DIR$/stores/src/main/resources/mapper/StoresMapper.xml" />
+        <option value="$PROJECT_DIR$/stores/src/main/java/xyz/gaoliqing/stores/controller/StoresController.java" />
+        <option value="$PROJECT_DIR$/production/src/main/java/xyz/gaoliqing/production/feign/StoresFeignInterface.java" />
+        <option value="$PROJECT_DIR$/production/src/main/java/xyz/gaoliqing/production/service/impl/ProductionInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/stores/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/production/src/main/java/xyz/gaoliqing/production/fallback/StoresFallbackFactory.java" />
+        <option value="$PROJECT_DIR$/order/src/main/java/xyz/gaoliqing/order/fallback/ProductionFallbackFactory.java" />
+        <option value="$PROJECT_DIR$/production/src/main/java/xyz/gaoliqing/production/exception/ExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/production/src/main/java/xyz/gaoliqing/production/exception/CustomException.java" />
+        <option value="$PROJECT_DIR$/production/src/main/resources/static/upload.html" />
+        <option value="$PROJECT_DIR$/production/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/production/src/main/java/xyz/gaoliqing/production/utils/FtpUtil.java" />
+        <option value="$PROJECT_DIR$/config-server/src/main/java/xyz/gaoliqing/configserver/SnowFlake.java" />
+        <option value="$PROJECT_DIR$/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/production/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server/src/main/java/xyz/gaoliqing/configserver/ConfigServerApplication.java" />
+        <option value="$PROJECT_DIR$/config-server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/production/src/main/java/xyz/gaoliqing/production/controller/ProductionInfoController.java" />
+        <option value="$PROJECT_DIR$/production/src/main/java/xyz/gaoliqing/production/ProductionApplication.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SpringGO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringGO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringGO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringGO" type="462c0819:PsiDirectoryNode" />
+              <item name="config-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringGO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringGO" type="462c0819:PsiDirectoryNode" />
+              <item name="config-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringGO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringGO" type="462c0819:PsiDirectoryNode" />
+              <item name="config-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringGO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringGO" type="462c0819:PsiDirectoryNode" />
+              <item name="config-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringGO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringGO" type="462c0819:PsiDirectoryNode" />
+              <item name="config-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="configserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringGO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringGO" type="462c0819:PsiDirectoryNode" />
+              <item name="config-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringGO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringGO" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringGO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringGO" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringGO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringGO" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringGO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringGO" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringGO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringGO" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringGO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringGO" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringGO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringGO" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c7973871-de86-4a88-b596-fcfe204dcbbe" name="Default Changelist" comment="" />
+      <created>1576479902509</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576479902509</updated>
+      <workItem from="1576479904551" duration="7874000" />
+      <workItem from="1576541237184" duration="2830000" />
+      <workItem from="1576562864177" duration="10811000" />
+      <workItem from="1576627660153" duration="18957000" />
+      <workItem from="1576723676457" duration="4251000" />
+      <workItem from="1576800451646" duration="1566000" />
+      <workItem from="1576802208046" duration="19075000" />
+      <workItem from="1576836251354" duration="743000" />
+      <workItem from="1576837190449" duration="213000" />
+      <workItem from="1576837443647" duration="158000" />
+      <workItem from="1576837641139" duration="1314000" />
+      <workItem from="1576894448462" duration="14512000" />
+      <workItem from="1577059843784" duration="707000" />
+      <workItem from="1577062075311" duration="10533000" />
+      <workItem from="1577146244621" duration="13026000" />
+      <workItem from="1577323610831" duration="5386000" />
+      <workItem from="1577409384397" duration="2074000" />
+      <workItem from="1577492149427" duration="2260000" />
+      <workItem from="1577667182582" duration="12679000" />
+      <workItem from="1577750766261" duration="1467000" />
+      <workItem from="1577752493157" duration="128000" />
+      <workItem from="1577752672691" duration="3198000" />
+      <workItem from="1577756101780" duration="4516000" />
+      <workItem from="1577923805462" duration="3642000" />
+      <workItem from="1578269384590" duration="668000" />
+      <workItem from="1578298425112" duration="681000" />
+      <workItem from="1578363964554" duration="2517000" />
+      <workItem from="1578528793429" duration="5538000" />
+      <workItem from="1578881180335" duration="21915000" />
+      <workItem from="1578962511129" duration="10660000" />
+      <workItem from="1579047046201" duration="12751000" />
+      <workItem from="1579133342663" duration="9426000" />
+      <workItem from="1579219841367" duration="5167000" />
+      <workItem from="1579392533811" duration="13294000" />
+      <workItem from="1579480923571" duration="17608000" />
+      <workItem from="1579598353197" duration="7529000" />
+      <workItem from="1582589705907" duration="622000" />
+      <workItem from="1582889450111" duration="34655000" />
+      <workItem from="1583107468824" duration="105983000" />
+      <workItem from="1583834259531" duration="985000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="391919000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24357034" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.647541" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
+      <window_info anchor="bottom" id="REST Client" order="7" weight="0.5032787" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4409836" />
+      <window_info anchor="bottom" id="Docker" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3295082" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.6032787" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" weight="0.6393443" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.24205749" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+</project>
