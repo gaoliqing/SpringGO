@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SpringGO.iml" filepath="$PROJECT_DIR$/.idea/SpringGO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order/order.iml" filepath="$PROJECT_DIR$/order/order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/production/production.iml" filepath="$PROJECT_DIR$/production/production.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stores/stores.iml" filepath="$PROJECT_DIR$/stores/stores.iml" />
+      <module fileurl="file://$PROJECT_DIR$/turbine/turbine.iml" filepath="$PROJECT_DIR$/turbine/turbine.iml" />
+    </modules>
+  </component>
+</project>

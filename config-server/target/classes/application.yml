@@ -10,10 +10,23 @@ spring:
       server:
         git:
           uri: https://github.com/gaoliqing/cloud-config.git
-          username: gaoliqing4832@163.com
-          password: gaoliqing1831
-          search-paths: /cloud-config
+          username: ENC(bltZUZBEFZvGzfG5UJT1/PCx1wIrOOkP2mPLC0SET2c=)
+          password: ENC(1ZgJHrhrIgIF2jLi65VvbVE7fN7UDHKZ)
+          search-paths: /production,/order,stores,/turbine,/configserver
+          default-label: master
+  rabbitmq:
+    host: 152.136.206.111
+    username: gaoliqing
+    password: gaoliqing4832
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:6001/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+jasypt:
+  encryptor:
+    password: glq

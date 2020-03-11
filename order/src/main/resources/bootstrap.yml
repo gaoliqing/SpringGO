@@ -1,0 +1,21 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:6005
+      profile: dev
+      name: order
+org:
+  dromara:
+    hmily:
+      serializer: kryo
+      recoverDelayTime: 30
+      retryMax: 30
+      scheduledDelay: 30
+      scheduledThreadMax: 10
+      repositorySupport: db
+      started: ture
+      hmilyDbConfig:
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://
+        username:
+        password: 

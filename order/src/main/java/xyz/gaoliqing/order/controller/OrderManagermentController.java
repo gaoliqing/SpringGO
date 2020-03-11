@@ -20,11 +20,11 @@ public class OrderManagermentController {
     @Resource
     private ProductionFeignInterface productionFeignInterface;
 
-    @GetMapping("/{order}")
-    public String getOrder(@PathVariable(value = "order") String order) {
+    @GetMapping("/order/{name}")
+    public String getOrder(@PathVariable(value = "name") String search_name) {
 
-        log.info("请求的查询:"+order);
-        return productionFeignInterface.getProductionInfo();
+        log.info("order输入了"+search_name);
+        return productionFeignInterface.getProductionInfo(search_name);
     }
 
 }

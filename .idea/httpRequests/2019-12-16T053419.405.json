@@ -1,0 +1,7 @@
+{
+  "timestamp": "2019-12-16T09:34:18.615+0000",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "message": "Request method 'POST' not supported",
+  "path": "/actuator/bus-refresh"
+}

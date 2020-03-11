@@ -4,8 +4,6 @@ import feign.hystrix.FallbackFactory;
 import org.springframework.stereotype.Component;
 import xyz.gaoliqing.order.feign.ProductionFeignInterface;
 
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author Mr.GaoLiqing
@@ -17,15 +15,7 @@ public class ProductionFallbackFactory implements FallbackFactory<ProductionFeig
 
     @Override
     public ProductionFeignInterface create(Throwable throwable) {
-        return new ProductionFeignInterface() {
-            @Override
-            public String getProductionInfo() {
 
-                Map<String, Object> map = new HashMap<>();
-                map.put("message", "抢购的人太多了,服务熔断喽喽!");
-
-                return map.toString();
-            }
-        };
+        return (s) -> "我靠, order在调用production时 熔断了!";
     }
 }
