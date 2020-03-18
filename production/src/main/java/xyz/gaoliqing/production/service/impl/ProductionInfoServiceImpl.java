@@ -5,6 +5,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import xyz.gaoliqing.production.feign.StoresFeignInterface;
+import xyz.gaoliqing.production.mapper.ProductionMapper;
+import xyz.gaoliqing.production.pojo.AddForm;
 import xyz.gaoliqing.production.pojo.Capsule;
 import xyz.gaoliqing.production.service.ProductionInfoService;
 
@@ -24,6 +26,8 @@ public class ProductionInfoServiceImpl implements ProductionInfoService {
     private ObjectMapper mapper;
     @Resource
     private StoresFeignInterface storesFeignInterface;
+    @Resource
+    private ProductionMapper productionMapper;
 
     @Override
     public Map<String, List<Capsule>> getProducts(String search_name) throws JsonProcessingException {
@@ -31,5 +35,11 @@ public class ProductionInfoServiceImpl implements ProductionInfoService {
         String info = storesFeignInterface.getProductionInfo("color-a");
 
         return mapper.readValue(info, Map.class);
+    }
+
+    @Override
+    public int insertForm(AddForm addForm) {
+
+        return productionMapper.insertForm(addForm);
     }
 }

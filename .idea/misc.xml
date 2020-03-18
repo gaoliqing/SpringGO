@@ -23,18 +23,15 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/stores" />
   </component>
-  <component name="JavaScriptSettings">
-    <option name="languageLevel" value="ES6" />
-  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/eureka/pom.xml" />
-        <option value="$PROJECT_DIR$/config-server/pom.xml" />
-        <option value="$PROJECT_DIR$/production/pom.xml" />
-        <option value="$PROJECT_DIR$/order/pom.xml" />
-        <option value="$PROJECT_DIR$/turbine/pom.xml" />
         <option value="$PROJECT_DIR$/stores/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/order/pom.xml" />
+        <option value="$PROJECT_DIR$/production/pom.xml" />
+        <option value="$PROJECT_DIR$/turbine/pom.xml" />
       </list>
     </option>
   </component>

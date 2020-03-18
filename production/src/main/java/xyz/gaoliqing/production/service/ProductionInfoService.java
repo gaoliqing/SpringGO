@@ -1,6 +1,7 @@
 package xyz.gaoliqing.production.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import xyz.gaoliqing.production.pojo.AddForm;
 import xyz.gaoliqing.production.pojo.Capsule;
 
 import java.util.List;
@@ -14,4 +15,6 @@ import java.util.Map;
 public interface ProductionInfoService {
 
     Map<String, List<Capsule>> getProducts(String serch_name) throws JsonProcessingException;
+
+    int insertForm(AddForm addForm);
 }

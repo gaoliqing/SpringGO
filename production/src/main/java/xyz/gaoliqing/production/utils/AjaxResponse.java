@@ -3,6 +3,7 @@ package xyz.gaoliqing.production.utils;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import xyz.gaoliqing.production.exception.CustomException;
+import xyz.gaoliqing.production.exception.CustomExceptionType;
 
 /**
  * @author Mr.GaoLiqing
@@ -17,13 +18,18 @@ public class AjaxResponse<T> implements Cloneable{
     private boolean status;
     private int code;
     private String message;
-    private T date;
+    private T data;
 
     private static AjaxResponse ajaxResponse = new AjaxResponse();
 
-    public static AjaxResponse error(CustomException e) throws CloneNotSupportedException {
+    public static AjaxResponse error(CustomException e) {
 
-        AjaxResponse clone = (AjaxResponse) ajaxResponse.clone();
+        AjaxResponse clone;
+        try {
+            clone = (AjaxResponse) ajaxResponse.clone();
+        } catch (CloneNotSupportedException e1) {
+            throw new CustomException(CustomExceptionType.SYSTEM_ERROR, "克隆失败");
+        }
         clone.setStatus(false);
         clone.setCode(e.getCode());
         switch (e.getCode()) {
@@ -35,22 +41,32 @@ public class AjaxResponse<T> implements Cloneable{
         return clone;
     }
 
-    public static AjaxResponse success() throws CloneNotSupportedException {
+    public static AjaxResponse success() {
 
-        AjaxResponse clone = (AjaxResponse) ajaxResponse.clone();
+        AjaxResponse clone;
+        try {
+            clone = (AjaxResponse) ajaxResponse.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new CustomException(CustomExceptionType.SYSTEM_ERROR, "克隆失败");
+        }
         clone.setStatus(true);
         clone.setCode(200);
         clone.setMessage("success");
         return clone;
     }
 
-    public static <T> AjaxResponse success(T date) throws CloneNotSupportedException {
+    public static <T> AjaxResponse success(T date) {
 
-        AjaxResponse clone = (AjaxResponse) ajaxResponse.clone();
+        AjaxResponse clone;
+        try {
+            clone = (AjaxResponse) ajaxResponse.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new CustomException(CustomExceptionType.SYSTEM_ERROR, "克隆失败");
+        }
         clone.setStatus(true);
         clone.setCode(200);
         clone.setMessage("success");
-        clone.setDate(date);
+        clone.setData(date);
         return clone;
     }
 

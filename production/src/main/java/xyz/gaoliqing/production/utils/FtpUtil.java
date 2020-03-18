@@ -46,7 +46,6 @@ public class FtpUtil {
         // 返回的文件名
         String remote;
         String filePath = new SimpleDateFormat("yyyy/MM").format(new Date());
-        System.out.println(filePath);
         // 创建ftp客户端
         FTPClient ftpClient = new FTPClient();
         // 设置编码字符集
@@ -106,7 +105,7 @@ public class FtpUtil {
             }
         }
 
-        return remote;
+        return filePath+"/"+remote;
     }
 
 

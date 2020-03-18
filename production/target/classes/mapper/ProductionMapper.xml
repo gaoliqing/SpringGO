@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="xyz.gaoliqing.production.mapper.ProductionMapper">
+
+    <insert id="insertForm" parameterType="xyz.gaoliqing.production.pojo.AddForm">
+        insert into capsule (goods_place,title,goods_desc,imgAddress)
+        values (#{goodsPlace},#{title},#{desc},#{imgAddress})
+    </insert>
+
+</mapper>

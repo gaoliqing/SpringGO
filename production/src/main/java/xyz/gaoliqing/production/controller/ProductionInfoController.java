@@ -2,11 +2,11 @@ package xyz.gaoliqing.production.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import xyz.gaoliqing.production.exception.CustomException;
 import xyz.gaoliqing.production.exception.CustomExceptionType;
+import xyz.gaoliqing.production.pojo.AddForm;
 import xyz.gaoliqing.production.pojo.Capsule;
 import xyz.gaoliqing.production.service.ProductionInfoService;
 import xyz.gaoliqing.production.utils.AjaxResponse;
@@ -29,26 +29,50 @@ public class ProductionInfoController {
 
     @Resource
     private ProductionInfoService productionInfoService;
-    @Value("${server.version}")
-    private String version;
 
+    /**
+     * 模拟Feign调用及链路追踪
+     *
+     * @param name 查询参数
+     * @return  ...
+     * @throws JsonProcessingException 字符串转json对象的异常
+     */
     @GetMapping("/production/{name}")
-    public AjaxResponse getProductionInfo(@PathVariable("name") String name) throws CloneNotSupportedException, JsonProcessingException {
+    public AjaxResponse getProductionInfo(@PathVariable("name") String name) throws JsonProcessingException {
 
         Map<String, List<Capsule>> products = productionInfoService.getProducts(name);
 
         return AjaxResponse.success(products);
     }
 
+    /**
+     *
+     * @param file 上传封面图片
+     * @return 返回图片的存储地址
+     * @throws IOException IO异常
+     */
     @PostMapping("/upload")
-    public String upload(MultipartFile file) throws IOException {
+    public AjaxResponse upload(MultipartFile file) throws IOException {
 
         String fileName = file.getOriginalFilename();
         InputStream in = file.getInputStream();
         if (file.isEmpty()) throw new CustomException(CustomExceptionType.USER_INPUT_ERROR, "上传文件不能为空");
-        FtpUtil.fileUpload("152.136.206.111", 21, "glq", "gaoliqing4832","/home/glq/", fileName, in);
+        String fileUploadPath = FtpUtil.fileUpload("152.136.206.111", 21, "glq", "gaoliqing4832", "/home/glq/", fileName, in);
 
-        return "OK";
+        return AjaxResponse.success(fileUploadPath);
+    }
+
+    /**
+     *
+     * @param addForm 上传表单数据
+     * @return ...
+     */
+    @PostMapping("/addform")
+    public AjaxResponse addForm(@RequestBody AddForm addForm) {
+
+        productionInfoService.insertForm(addForm);
+
+        return AjaxResponse.success();
     }
 
 }

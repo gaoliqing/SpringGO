@@ -21,7 +21,6 @@
       <module name="production" target="1.8" />
       <module name="stores" target="1.8" />
       <module name="turbine" target="1.8" />
-      <module name="user" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

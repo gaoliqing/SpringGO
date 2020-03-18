@@ -27,7 +27,7 @@ public class StoresController {
     /**
      * 库存数量查询接口
      *
-     * @param name 商品的名称,如 GL8
+     * @param name 商品的名称
      * @return 该商品的库存数量
      */
     @GetMapping("/store/{name}")
