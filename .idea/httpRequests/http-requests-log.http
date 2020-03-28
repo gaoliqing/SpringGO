@@ -1,3 +1,12 @@
+POST http://localhost:9999/insert
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "user_name":"gaoliqing",   "password":"123456",   "scope":"admin",   "enabled":1,   "account_non_expired":1,   "credentials_non_expired":1,   "account_non_locked":1,   "failure_limit":5 }
+
+###
+
 POST http://localhost:6005/actuator/bus-refresh
 Accept: */*
 Content-Type: application/json

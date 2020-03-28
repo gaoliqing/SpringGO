@@ -1,6 +1,0 @@
-spring:
-  cloud:
-    config:
-      uri: http://localhost:6005
-      profile: dev
-      name: stores

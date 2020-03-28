@@ -1,4 +1,21 @@
+#spring:
+#  jackson:
+#    date-format: yyyy-MM-dd HH:mm:ss
+#    time-zone: GMT+8
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://152.136.206.111:3306/glq?characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+#    username: root
+#    password: 123456
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+server:
+  port: 6011
 spring:
+  application:
+    name: production
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
@@ -7,7 +24,23 @@ spring:
     url: jdbc:mysql://152.136.206.111:3306/glq?characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
     username: root
     password: 123456
-mybatis:
-  mapper-locations: classpath:mapper/*.xml
-  configuration:
-    map-underscore-to-camel-case: true
+  zipkin:
+    base-url: http://152.136.206.111:9411
+  sleuth:
+    sampler:
+      probability: 1
+  rabbitmq:
+    host: 152.136.206.111
+    port: 5672
+    username: gaoliqing
+    password: gaoliqing4832
+  cloud:
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

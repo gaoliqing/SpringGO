@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="xyz.gaoliqing.authserver.mapper.AccountMapper">
+
+    <select id="checkUser" parameterType="java.lang.String"
+            resultType="java.lang.String">
+
+        SELECT user_name FROM account
+        where user_name=#{username}
+
+    </select>
+
+    <select id="getUser" parameterType="java.lang.String"
+            resultType="xyz.gaoliqing.authserver.po.User">
+
+        SELECT * FROM account
+        where user_name=#{username}
+
+    </select>
+
+    <insert id="insertAccount" parameterType="xyz.gaoliqing.authserver.po.User">
+
+        insert into account (user_name,password,scope,create_time)
+        values (#{username},#{password},#{scope},curdate())
+
+    </insert>
+
+    <update id="updateAccontLimit" >
+
+        update account set failure_limit=#{count}
+        where user_name=#{username}
+
+    </update>
+
+    <update id="updateAccountLocked" parameterType="java.lang.String">
+
+        update account set account_non_locked=0
+        where user_name=#{username}
+
+    </update>
+
+</mapper>

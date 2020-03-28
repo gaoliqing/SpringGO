@@ -14,10 +14,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Capsule {
 
-    private String imgAddress;
+    private String goodsPlace;
+    private String goodsTime;
     private String title;
-    private String body;
-    private String clickTitle;
-    private String clickHref;
+    private String goodsDesc;
     private String color;
+    private String imgAddress;
 }

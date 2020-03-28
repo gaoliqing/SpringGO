@@ -1,7 +1,38 @@
-spring:
-  cloud:
-    config:
-      uri: http://localhost:6005
-      profile: dev
-      name: production
-
+#spring:
+#  cloud:
+#    config:
+#      uri: http://localhost:6005
+#      profile: dev
+#      name: production
+#server:
+#  port: 6011
+#spring:
+#  application:
+#    name: production
+#  zipkin:
+#    base-url: http://152.136.206.111:9411
+#  sleuth:
+#    sampler:
+#      probability: 1
+#  rabbitmq:
+#    host: 152.136.206.111
+#    port: 5672
+#    username: gaoliqing
+#    password: gaoliqing4832
+#  cloud:
+#    bus:
+#      enabled: true
+#      trace:
+#        enabled: true
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#eureka:
+#  instance:
+#    lease-expiration-duration-in-seconds: 90
+#    lease-renewal-interval-in-seconds: 30
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:6001/eureka/

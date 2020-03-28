@@ -1,6 +1,7 @@
 package xyz.gaoliqing.production.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.github.pagehelper.PageInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -8,6 +9,7 @@ import xyz.gaoliqing.production.exception.CustomException;
 import xyz.gaoliqing.production.exception.CustomExceptionType;
 import xyz.gaoliqing.production.pojo.AddForm;
 import xyz.gaoliqing.production.pojo.Capsule;
+import xyz.gaoliqing.production.pojo.UserAll;
 import xyz.gaoliqing.production.service.ProductionInfoService;
 import xyz.gaoliqing.production.utils.AjaxResponse;
 import xyz.gaoliqing.production.utils.FtpUtil;
@@ -44,6 +46,13 @@ public class ProductionInfoController {
 
         return AjaxResponse.success(products);
     }
+    @GetMapping("/images")
+    public AjaxResponse getImg() {
+
+        List<Capsule> list = productionInfoService.getImg();
+
+        return AjaxResponse.success(list);
+    }
 
     /**
      *
@@ -73,6 +82,21 @@ public class ProductionInfoController {
         productionInfoService.insertForm(addForm);
 
         return AjaxResponse.success();
+    }
+
+    /**
+     *
+     * @param query 查询的账号
+     * @param pageNum 分页的第几页
+     * @param pageSize 每页的条数
+     * @return 分页结果
+     */
+    @GetMapping("/userall")
+    public AjaxResponse getUserAll(@RequestParam String query,@RequestParam Integer pageNum,@RequestParam Integer pageSize) {
+
+        PageInfo<UserAll> userPageInfo = productionInfoService.pageInfo(pageNum, pageSize);
+
+        return AjaxResponse.success(userPageInfo);
     }
 
 }

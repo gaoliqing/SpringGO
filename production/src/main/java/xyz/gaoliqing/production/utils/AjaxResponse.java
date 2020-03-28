@@ -1,9 +1,10 @@
 package xyz.gaoliqing.production.utils;
 
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import xyz.gaoliqing.production.exception.CustomException;
 import xyz.gaoliqing.production.exception.CustomExceptionType;
+
+import java.io.Serializable;
 
 /**
  * @author Mr.GaoLiqing
@@ -11,10 +12,9 @@ import xyz.gaoliqing.production.exception.CustomExceptionType;
  * @description
  */
 @Data
-@NoArgsConstructor
-@SuppressWarnings("unchecked")
-public class AjaxResponse<T> implements Cloneable{
+public class AjaxResponse<T> implements Cloneable, Serializable {
 
+    private static final long serialVersionUID = -5893516345281301561L;
     private boolean status;
     private int code;
     private String message;
@@ -24,12 +24,7 @@ public class AjaxResponse<T> implements Cloneable{
 
     public static AjaxResponse error(CustomException e) {
 
-        AjaxResponse clone;
-        try {
-            clone = (AjaxResponse) ajaxResponse.clone();
-        } catch (CloneNotSupportedException e1) {
-            throw new CustomException(CustomExceptionType.SYSTEM_ERROR, "克隆失败");
-        }
+        AjaxResponse clone = ARClone();
         clone.setStatus(false);
         clone.setCode(e.getCode());
         switch (e.getCode()) {
@@ -43,12 +38,7 @@ public class AjaxResponse<T> implements Cloneable{
 
     public static AjaxResponse success() {
 
-        AjaxResponse clone;
-        try {
-            clone = (AjaxResponse) ajaxResponse.clone();
-        } catch (CloneNotSupportedException e) {
-            throw new CustomException(CustomExceptionType.SYSTEM_ERROR, "克隆失败");
-        }
+        AjaxResponse clone = ARClone();
         clone.setStatus(true);
         clone.setCode(200);
         clone.setMessage("success");
@@ -57,12 +47,7 @@ public class AjaxResponse<T> implements Cloneable{
 
     public static <T> AjaxResponse success(T date) {
 
-        AjaxResponse clone;
-        try {
-            clone = (AjaxResponse) ajaxResponse.clone();
-        } catch (CloneNotSupportedException e) {
-            throw new CustomException(CustomExceptionType.SYSTEM_ERROR, "克隆失败");
-        }
+        AjaxResponse clone = ARClone();
         clone.setStatus(true);
         clone.setCode(200);
         clone.setMessage("success");
@@ -70,4 +55,13 @@ public class AjaxResponse<T> implements Cloneable{
         return clone;
     }
 
+    private static AjaxResponse ARClone() {
+        AjaxResponse cloned;
+        try {
+            cloned = (AjaxResponse) ajaxResponse.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new CustomException(CustomExceptionType.SYSTEM_ERROR, "克隆失败");
+        }
+        return cloned;
+    }
 }

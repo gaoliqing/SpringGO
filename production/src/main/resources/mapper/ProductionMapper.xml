@@ -7,4 +7,9 @@
         values (#{goodsPlace},#{time},#{title},#{desc},#{imgAddress})
     </insert>
 
+    <select id="getUserAll" resultType="xyz.gaoliqing.production.pojo.UserAll">
+        select user_name, create_time from account
+    </select>
+
+
 </mapper>
