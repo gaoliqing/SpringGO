@@ -3,7 +3,9 @@
 ![image](https://img.shields.io/badge/language-java-green.svg)
 <br/>
 觉得有用的请点个 `Star`  <img src="https://www.gaoliqing.xyz/images/2020/03/f25455ccc0214037b105dc90228daef7.gif" width="50" height="50" alt=""/>
-
+![add image](https://github.com/gaoliqing/images/raw/master/dhbgi.gif)
+abc
+![](https://github.com/gaoliqing/images/raw/master/dhbgi.gif)
 
 <br/>
 <p align="center" style="color: green">
@@ -20,7 +22,7 @@ SpringCloud全家桶配置方面已经很方便了 , 步骤都是加入依赖 , 
 </p>
 
 ![image](https://www.gaoliqing.xyz/images/2020/03/4ffd2dcd24c5421d95d438a9a3f987c7.jpg)
-$\color{#FF0000}{我会陆续完善项目 , 文档会慢慢更新 , 都是利用业余时间写的 , 以实现功能为目的 , 期望理解}$
+我会陆续完善项目 , 文档会慢慢更新 , 都是利用业余时间写的 , 以实现功能为目的 , 期望理解
 <br/>
 <br/>
 ![image](https://img.shields.io/static/v1?label=Project&message=PageHome&color=brightgreen)
