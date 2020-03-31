@@ -56,7 +56,7 @@ public class ProductionInfoController {
 
     /**
      *
-     * @param file 上传封面图片
+     * @param file 上传图片
      * @return 返回图片的存储地址
      * @throws IOException IO异常
      */
@@ -66,7 +66,8 @@ public class ProductionInfoController {
         String fileName = file.getOriginalFilename();
         InputStream in = file.getInputStream();
         if (file.isEmpty()) throw new CustomException(CustomExceptionType.USER_INPUT_ERROR, "上传文件不能为空");
-        String fileUploadPath = FtpUtil.fileUpload("152.136.206.111", 21, "glq", "gaoliqing4832", "/home/glq/", fileName, in);
+        String fileUploadPath = FtpUtil.fileUpload("172.17.0.1", 21, "glq", "gaoliqing4832", "/home/glq/", fileName, in);
+//        String fileUploadPath = FtpUtil.fileUpload("152.136.206.111", 21, "glq", "gaoliqing4832", "/home/glq/", fileName, in);
 
         return AjaxResponse.success(fileUploadPath);
     }
@@ -94,6 +95,7 @@ public class ProductionInfoController {
     @GetMapping("/userall")
     public AjaxResponse getUserAll(@RequestParam String query,@RequestParam Integer pageNum,@RequestParam Integer pageSize) {
 
+        System.out.println("搜索框输入:"+query);
         PageInfo<UserAll> userPageInfo = productionInfoService.pageInfo(pageNum, pageSize);
 
         return AjaxResponse.success(userPageInfo);

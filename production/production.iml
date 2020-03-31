@@ -247,5 +247,8 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.2.2.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:5.2.2.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.6.3" level="project" />
+    <orderEntry type="library" name="Maven: com.github.ulisesbocchio:jasypt-spring-boot-starter:2.1.1" level="project" />
+    <orderEntry type="library" name="Maven: com.github.ulisesbocchio:jasypt-spring-boot:2.1.1" level="project" />
+    <orderEntry type="library" name="Maven: com.melloware:jasypt:1.9.4" level="project" />
   </component>
 </module>

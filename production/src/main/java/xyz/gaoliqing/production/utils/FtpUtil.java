@@ -52,11 +52,16 @@ public class FtpUtil {
         // ftpClient.setControlEncoding("UTF-8");
         try {
             // 连接FTP服务器
+            System.out.println("开始连接FTP服务器");
             ftpClient.connect(host, port);
+            System.out.println("连接完成");
             // 登录
+            System.out.println("开始登录");
             ftpClient.login(username, password);
+            System.out.println("登录完成");
             // 获取登录的状态码,判断是否成功
             int reply = ftpClient.getReplyCode();
+            System.out.println("登录的状态码::"+ reply);
             if (!FTPReply.isPositiveCompletion(reply)) {
                 ftpClient.disconnect();
                 throw new CustomException(CustomExceptionType.SYSTEM_ERROR, "登录FTP服务器,状态码异常"+reply);
@@ -87,6 +92,7 @@ public class FtpUtil {
             // 得到文件后缀
             String suffix = fileName.substring(fileName.lastIndexOf("."));
             remote = UUID.randomUUID().toString().replace("-", "") + suffix;
+            System.out.println("文件路径::"+remote);
             // 开始上传文件 ,remote指定上传远程服务器的文件名 local指本地的输入流
             if (!ftpClient.storeFile(remote, input)) {
                 throw new CustomException(CustomExceptionType.SYSTEM_ERROR, "FTP上传失败");
